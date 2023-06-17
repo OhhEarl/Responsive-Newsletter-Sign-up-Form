@@ -1,0 +1,160 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.col-sm-8{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    width: 62%;
+}
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 5px;
+    width: 360px;
+    color: hsl(235, 18%, 26%);
+}
+h1{
+    font-weight: 700;
+    font-size: 56px;
+    color: hsl(234, 29%, 20%);
+}
+.check{
+    margin-right: 12px;
+    font-size: 20px;
+}
+form{
+    box-sizing: border-box;
+}
+input{
+    height: 50px;
+}
+
+.form-group{
+    margin-top: 30px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid hsl(234, 29%, 20%);
+  }
+
+  input:hover{
+    cursor: pointer;
+    border: 1px solid hsl(234, 29%, 20%);
+  }
+
+  label{
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+  }
+  span{
+    font-size: 12px;
+    color:hsl(4, 100%, 67%);
+    font-weight: 700;
+  }
+
+button{
+    margin-top: 24px;
+    background-color: hsl(234, 29%, 20%);
+    padding: 12px;
+    outline: none;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+
+  button:hover{
+    background-color: hsl(4, 100%, 67%);
+    background: linear-gradient(to right, #fe5573,#ff6742);
+    cursor: pointer;
+  }
+
+
+  .responsive-images {
+    display: none;
+  }
+
+  .invalid {
+    background-color: #ffe8e6;
+    border:1px solid hsl(4, 100%, 67%);
+  }
+
+
+  .success{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    width: 30%;
+    padding: 30px;
+  }
+  #showSucces{
+    display: none;
+  }
+
+
+  @media (max-width: 376px) {
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+    .image{
+        display: none;
+    } 
+    .col-sm-8{
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;      
+    }
+
+    p{
+        padding-right: 50px;  
+    }
+    .col-lg-6{
+        margin: 0;
+        padding:  0;
+        margin-left: -16px;
+    }
+
+    .header{
+        font-size: 40px;
+    }
+
+    .responsive-images {
+        padding: 0;
+        display: block;
+        z-index: 1000;
+        /* Additional styles for the image */
+      }
+
+      #myRow{
+        margin-top: 360px;
+      }
+
+      .success{
+        width: 100%;
+        border-radius: 1px;
+        height: 100vh;
+      }
+
+      .checkLogo{
+        margin-top: 100px;
+      }
+
+      #returnButton{
+        margin-top: 130px;
+      }
+  }
+
+  

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form id="myForm">
+  <input type="text" id="emailInput" required>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+  
+      var emailInput = document.getElementById('emailInput');
+      var email = emailInput.value;
+  
+      if (isValidEmail(email)) {
+        console.log('Email is valid');
+        // Perform further actions (e.g., submit form)
+      } else {
+        console.log('Email is invalid');
+        // Display error message or perform any necessary actions
+      }
+    });
+  
+    function isValidEmail(email) {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+  </script>
+    
+</body>
+</html>
