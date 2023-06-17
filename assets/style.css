@@ -103,7 +103,7 @@ button{
 
 
 
-@media (max-width: 475px) {
+  @media screen and (max-width: 475px) {
   body{
       margin: 0;
       padding: 0;
@@ -141,6 +141,63 @@ button{
 
     #myRow{
       margin-top: 500px;
+    }
+
+    .success{
+      width: 100%;
+      border-radius: 1px;
+      height: 100vh;
+    }
+
+    .checkLogo{
+      margin-top: 80px;
+    }
+
+    #returnButton{
+      margin-top: 100px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+  body{
+      margin: 0;
+      padding: 0;
+      background-color: white;
+  }
+  .image{
+      display: none;
+  } 
+  .col-sm-8{
+      width: 100%;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;      
+  }
+
+  p{
+      padding-right: 50px;  
+  }
+  .col-lg-6{
+      margin: 0;
+      padding:  0;
+      margin-left: -16px;
+      width: 100%;
+  }
+
+  .header{
+      font-size: 40px;
+  }
+
+  .responsive-images {
+      padding: 0;
+      display: block;
+      z-index: 1000;
+      /* Additional styles for the image */
+    }
+
+    #myRow{
+      margin-top: 120%;
     }
 
     .success{
